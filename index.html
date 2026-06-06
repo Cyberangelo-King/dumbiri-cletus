@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dumbiri Cletus | Author, Speaker, Community Builder</title>
+    <meta
+      name="description"
+      content="The official portfolio of Dumbiri Cletus, a thought leader, author, podcaster, and community builder."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <header class="site-header" aria-label="Primary navigation">
+      <a class="brand-mark" href="#hero" aria-label="Dumbiri Cletus home">DC</a>
+      <p class="identity-stack">author<br />speaker<br />community builder<br />strategist</p>
+      <button class="menu-button" type="button" aria-expanded="false" aria-controls="menuOverlay">
+        <span class="menu-dot" aria-hidden="true"></span>
+        <span>Menu</span>
+      </button>
+    </header>
+
+    <aside class="menu-overlay" id="menuOverlay" aria-hidden="true" inert>
+      <div class="menu-overlay__top">
+        <span class="brand-mark">DC</span>
+        <button class="close-menu" type="button">Close</button>
+      </div>
+      <nav class="overlay-nav" aria-label="Expanded navigation">
+        <a href="#books">Books</a>
+        <a href="#podcasts">Podcasts</a>
+        <a href="#community">Community</a>
+        <a href="#about">About</a>
+        <a href="#media">Media</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="overlay-footer">
+        <a href="#contact" class="button button--red">Book Dumbiri</a>
+        <div class="social-row" aria-label="Social links">
+          <a href="#" aria-label="LinkedIn">LinkedIn</a>
+          <a href="#" aria-label="Instagram">Instagram</a>
+          <a href="#" aria-label="X">X</a>
+        </div>
+      </div>
+    </aside>
+
+    <main id="main">
+      <section class="hero section-panel" id="hero" aria-labelledby="heroTitle">
+        <div class="hero-media" aria-hidden="true">
+          <img
+            src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=1800&q=80"
+            alt=""
+          />
+        </div>
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="hero-content">
+          <h1 id="heroTitle">Dumbiri Cletus</h1>
+          <p>
+            Dumbiri Cletus is a thought leader, author, and community builder exploring ideas at the
+            intersection of purpose, leadership, culture, and human potential.
+          </p>
+          <div class="button-row" aria-label="Primary actions">
+            <a class="button" href="#books">Explore Books <span aria-hidden="true">-&gt;</span></a>
+            <a class="button" href="#podcasts">Listen to Podcast <span aria-hidden="true">-&gt;</span></a>
+            <a class="button" href="#community">Join Community <span aria-hidden="true">-&gt;</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="press-strip" aria-label="Featured media logos">
+        <span>Entrepreneur</span>
+        <span>Fast Company</span>
+        <span>Wired</span>
+        <span>Forbes</span>
+        <span>The New York Times</span>
+        <span>Time</span>
+        <span>Harvard Business Review</span>
+      </section>
+
+      <section class="content-discovery reveal" aria-labelledby="discoveryTitle">
+        <div>
+          <p class="eyebrow">Content discovery</p>
+          <h2 id="discoveryTitle">Find the right entry point.</h2>
+        </div>
+        <div class="discovery-tools">
+          <label class="search-field">
+            <span class="sr-only">Search content</span>
+            <input id="siteSearch" type="search" placeholder="Search books, episodes, topics..." />
+          </label>
+          <div class="filter-pills" aria-label="Curated collections">
+            <button class="filter-pill is-active" type="button" data-filter="all">Start Here</button>
+            <button class="filter-pill" type="button" data-filter="leaders">For Leaders</button>
+            <button class="filter-pill" type="button" data-filter="builders">For Builders</button>
+            <button class="filter-pill" type="button" data-filter="reflection">Deep Reflection</button>
+            <button class="filter-pill" type="button" data-filter="latest">Latest Work</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="work-section reveal" id="books" aria-labelledby="booksTitle">
+        <div class="section-heading">
+          <h2 id="booksTitle">Books</h2>
+          <a class="view-all" href="#contact">View all <span aria-hidden="true">-&gt;</span></a>
+        </div>
+        <div class="book-rail searchable-grid">
+          <article class="book-card searchable-item" data-tags="book leadership leaders latest">
+            <div class="book-cover book-cover--red">
+              <span>01</span>
+              <strong>The Builder's Mind</strong>
+            </div>
+            <p class="tag">Featured</p>
+            <h3>The Builder's Mind</h3>
+            <p>A field guide for people shaping communities, culture, and consequential ideas.</p>
+            <a href="#">Read / Buy <span aria-hidden="true">-&gt;</span></a>
+          </article>
+          <article class="book-card searchable-item" data-tags="book purpose reflection faith">
+            <div class="book-cover">
+              <span>02</span>
+              <strong>Purpose in Public</strong>
+            </div>
+            <p class="tag">Recommended starting point</p>
+            <h3>Purpose in Public</h3>
+            <p>Essays on conviction, leadership, identity, and the inner life of visible work.</p>
+            <a href="#">Read / Buy <span aria-hidden="true">-&gt;</span></a>
+          </article>
+          <article class="book-card searchable-item" data-tags="book community builders culture">
+            <div class="book-cover book-cover--photo">
+              <span>03</span>
+              <strong>Gather the Future</strong>
+            </div>
+            <p class="tag">Community</p>
+            <h3>Gather the Future</h3>
+            <p>A practical meditation on belonging, local leadership, and movements that last.</p>
+            <a href="#">Read / Buy <span aria-hidden="true">-&gt;</span></a>
+          </article>
+          <article class="book-card searchable-item" data-tags="book leadership reflection latest">
+            <div class="book-cover book-cover--light">
+              <span>04</span>
+              <strong>The Quiet Authority</strong>
+            </div>
+            <p class="tag">Latest</p>
+            <h3>The Quiet Authority</h3>
+            <p>How thoughtful people lead without performance, noise, or borrowed language.</p>
+            <a href="#">Read / Buy <span aria-hidden="true">-&gt;</span></a>
+          </article>
+        </div>
+      </section>
+
+      <section class="podcast-section reveal" id="podcasts" aria-labelledby="podcastsTitle">
+        <div class="section-heading">
+          <h2 id="podcastsTitle">Podcasts</h2>
+          <p>Conversations for leaders, builders, and communities in motion.</p>
+        </div>
+        <div class="podcast-layout">
+          <div class="episode-list" role="list" aria-label="Podcast episodes">
+            <button
+              class="episode-button is-active searchable-item"
+              type="button"
+              data-title="Leadership Without Noise"
+              data-date="June 2026"
+              data-duration="42 min"
+              data-description="A conversation on disciplined influence, public conviction, and doing meaningful work without becoming performative."
+              data-tags="podcast leadership leaders latest"
+            >
+              <span>EP 01</span>
+              <strong>Leadership Without Noise</strong>
+              <small>Leadership &middot; 42 min</small>
+            </button>
+            <button
+              class="episode-button searchable-item"
+              type="button"
+              data-title="Building Communities That Heal"
+              data-date="May 2026"
+              data-duration="38 min"
+              data-description="Dumbiri explores trust, rituals, hospitality, and the operating principles behind durable communities."
+              data-tags="podcast community builders"
+            >
+              <span>EP 02</span>
+              <strong>Building Communities That Heal</strong>
+              <small>Community &middot; 38 min</small>
+            </button>
+            <button
+              class="episode-button searchable-item"
+              type="button"
+              data-title="The Inner Work of Public Purpose"
+              data-date="April 2026"
+              data-duration="51 min"
+              data-description="A reflective episode on ambition, faith, patience, and the private disciplines behind visible impact."
+              data-tags="podcast purpose faith reflection"
+            >
+              <span>EP 03</span>
+              <strong>The Inner Work of Public Purpose</strong>
+              <small>Reflection &middot; 51 min</small>
+            </button>
+          </div>
+          <article class="active-episode" aria-live="polite">
+            <div class="episode-art" aria-hidden="true">
+              <span>DC</span>
+            </div>
+            <p class="eyebrow" id="episodeMeta">June 2026 &middot; 42 min</p>
+            <h3 id="episodeTitle">Leadership Without Noise</h3>
+            <p id="episodeDescription">
+              A conversation on disciplined influence, public conviction, and doing meaningful work
+              without becoming performative.
+            </p>
+            <audio controls preload="none">
+              <source src="" type="audio/mpeg" />
+              Your browser does not support audio playback. Use the platform links below.
+            </audio>
+            <div class="platform-links">
+              <a href="#">Spotify</a>
+              <a href="#">Apple Podcasts</a>
+              <a href="#">YouTube</a>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="community-section reveal" id="community" aria-labelledby="communityTitle">
+        <div class="community-hero">
+          <img
+            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=1800&q=80"
+            alt="People gathered in a collaborative community setting"
+            loading="lazy"
+          />
+          <div>
+            <p class="eyebrow">Community</p>
+            <h2 id="communityTitle">Building people. Shaping culture.</h2>
+          </div>
+        </div>
+        <div class="initiative-grid searchable-grid">
+          <article class="initiative-card searchable-item" data-tags="community builders leaders">
+            <span>01</span>
+            <h3>The Builder Circle</h3>
+            <p>A private space for emerging leaders working on ideas, institutions, and impact.</p>
+            <a href="#contact">Join the Community</a>
+          </article>
+          <article class="initiative-card searchable-item" data-tags="community latest culture">
+            <span>02</span>
+            <h3>Public Purpose Sessions</h3>
+            <p>Live gatherings that turn reflection into clearer language, strategy, and action.</p>
+            <a href="#contact">Attend an Event</a>
+          </article>
+          <article class="initiative-card searchable-item" data-tags="community leaders builders">
+            <span>03</span>
+            <h3>Partner Labs</h3>
+            <p>Collaborative rooms for organizations developing community-centered leadership.</p>
+            <a href="#contact">Partner With Us</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="about-section reveal" id="about" aria-labelledby="aboutTitle">
+        <div class="about-media">
+          <img
+            src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80"
+            alt="A quiet editorial workspace representing Dumbiri Cletus's writing and strategy work"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2 id="aboutTitle">A life organized around ideas, people, and public purpose.</h2>
+          <div class="chapter">
+            <h3>Origin</h3>
+            <p>Dumbiri's work begins with a conviction that ideas should become practices, communities, and institutions that help people live with more clarity.</p>
+          </div>
+          <div class="chapter">
+            <h3>Work</h3>
+            <p>Across writing, speaking, podcasting, and community design, he helps leaders name what matters and build durable containers for impact.</p>
+          </div>
+          <blockquote>Ideas matter most when they become communities, habits, and movements.</blockquote>
+          <div class="timeline" aria-label="Dumbiri Cletus milestones">
+            <div><span></span><strong>Published essays</strong><p>Early writing establishes the themes of purpose, leadership, and culture.</p></div>
+            <div><span></span><strong>Podcast launched</strong><p>Long-form conversations deepen the public conversation around meaningful work.</p></div>
+            <div><span></span><strong>Community formed</strong><p>Readers and listeners gather into a practical network of builders.</p></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="media-section reveal" id="media" aria-labelledby="mediaTitle">
+        <div class="section-heading">
+          <h2 id="mediaTitle">Media & Press</h2>
+          <div class="button-row">
+            <a class="button" href="#">Download Media Kit <span aria-hidden="true">-&gt;</span></a>
+            <a class="button button--red" href="#contact">Book for Speaking <span aria-hidden="true">-&gt;</span></a>
+          </div>
+        </div>
+        <div class="media-grid">
+          <article>
+            <p class="eyebrow">Interview</p>
+            <h3>How leaders build trust before they build scale</h3>
+            <a href="#">Read feature</a>
+          </article>
+          <article>
+            <p class="eyebrow">Article</p>
+            <h3>The cultural cost of unclear purpose</h3>
+            <a href="#">Read article</a>
+          </article>
+          <article>
+            <p class="eyebrow">Speaking</p>
+            <h3>Keynote: Communities that outlast campaigns</h3>
+            <a href="#">Watch talk</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section reveal" id="contact" aria-labelledby="contactTitle">
+        <div class="contact-intro">
+          <p class="eyebrow">Contact</p>
+          <h2 id="contactTitle">Let's start a conversation.</h2>
+          <p>For speaking, partnerships, podcast invitations, press, and community inquiries.</p>
+          <div class="contact-methods">
+            <a href="mailto:hello@dumbiricletus.com">hello@dumbiricletus.com</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Instagram</a>
+          </div>
+        </div>
+        <form class="contact-form" action="#" method="post">
+          <label>
+            Name
+            <input type="text" name="name" autocomplete="name" required />
+          </label>
+          <label>
+            Email
+            <input type="email" name="email" autocomplete="email" required />
+          </label>
+          <label>
+            Inquiry type
+            <select name="type" id="inquiryType">
+              <option>Speaking engagement</option>
+              <option>Podcast invitation</option>
+              <option>Media / press</option>
+              <option>Community membership</option>
+              <option>Partnership</option>
+            </select>
+          </label>
+          <p class="form-helper" id="formHelper">Share the event theme, audience, city, and date if available.</p>
+          <label>
+            Organization / event date
+            <input type="text" name="organization" />
+          </label>
+          <label>
+            Message
+            <textarea name="message" rows="5" required></textarea>
+          </label>
+          <button class="button button--red" type="submit">Send Inquiry <span aria-hidden="true">-&gt;</span></button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <strong>Dumbiri Cletus</strong>
+      <p>Author &middot; Speaker &middot; Community Builder &middot; Strategist</p>
+      <p>Built By The Web Maven 2026</p>
+      <a href="#hero">Back to top</a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
