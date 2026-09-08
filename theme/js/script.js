@@ -43,14 +43,16 @@ const revealObserver = new IntersectionObserver(
 document.querySelectorAll(".reveal").forEach((element) => revealObserver.observe(element));
 
 const hero = document.querySelector(".hero");
-window.addEventListener(
-  "scroll",
-  () => {
-    const progress = Math.min(window.scrollY / window.innerHeight, 1);
-    hero.style.setProperty("--hero-scale", String(1 + progress * 0.08));
-  },
-  { passive: true }
-);
+if (hero) {
+  window.addEventListener(
+    "scroll",
+    () => {
+      const progress = Math.min(window.scrollY / window.innerHeight, 1);
+      hero.style.setProperty("--hero-scale", String(1 + progress * 0.08));
+    },
+    { passive: true }
+  );
+}
 
 const siteSearch = document.querySelector("#siteSearch");
 const filterPills = document.querySelectorAll(".filter-pill");
@@ -62,6 +64,7 @@ function normalize(value) {
 }
 
 function filterContent() {
+  if (!siteSearch) return;
   const query = normalize(siteSearch.value);
 
   searchableItems.forEach((item) => {
@@ -73,31 +76,37 @@ function filterContent() {
   });
 }
 
-filterPills.forEach((pill) => {
-  pill.addEventListener("click", () => {
-    filterPills.forEach((item) => item.classList.remove("is-active"));
-    pill.classList.add("is-active");
-    activeFilter = pill.dataset.filter;
-    filterContent();
+if (filterPills.length > 0) {
+  filterPills.forEach((pill) => {
+    pill.addEventListener("click", () => {
+      filterPills.forEach((item) => item.classList.remove("is-active"));
+      pill.classList.add("is-active");
+      activeFilter = pill.dataset.filter;
+      filterContent();
+    });
   });
-});
+}
 
-siteSearch.addEventListener("input", filterContent);
+if (siteSearch) {
+  siteSearch.addEventListener("input", filterContent);
+}
 
 const episodeButtons = document.querySelectorAll(".episode-button");
 const episodeMeta = document.querySelector("#episodeMeta");
 const episodeTitle = document.querySelector("#episodeTitle");
 const episodeDescription = document.querySelector("#episodeDescription");
 
-episodeButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    episodeButtons.forEach((item) => item.classList.remove("is-active"));
-    button.classList.add("is-active");
-    episodeMeta.textContent = `${button.dataset.date} - ${button.dataset.duration}`;
-    episodeTitle.textContent = button.dataset.title;
-    episodeDescription.textContent = button.dataset.description;
+if (episodeButtons.length > 0 && episodeMeta && episodeTitle && episodeDescription) {
+  episodeButtons.forEach((button) => {
+    button.addEventListener("click", () => {
+      episodeButtons.forEach((item) => item.classList.remove("is-active"));
+      button.classList.add("is-active");
+      episodeMeta.textContent = `${button.dataset.date} - ${button.dataset.duration}`;
+      episodeTitle.textContent = button.dataset.title;
+      episodeDescription.textContent = button.dataset.description;
+    });
   });
-});
+}
 
 const inquiryType = document.querySelector("#inquiryType");
 const formHelper = document.querySelector("#formHelper");
@@ -109,11 +118,16 @@ const helperText = {
   Partnership: "Share the organization, goal, timeline, and collaboration model you have in mind."
 };
 
-inquiryType.addEventListener("change", () => {
-  formHelper.textContent = helperText[inquiryType.value] || helperText["Speaking engagement"];
-});
+if (inquiryType && formHelper) {
+  inquiryType.addEventListener("change", () => {
+    formHelper.textContent = helperText[inquiryType.value] || helperText["Speaking engagement"];
+  });
+}
 
-document.querySelector(".contact-form").addEventListener("submit", (event) => {
-  event.preventDefault();
-  formHelper.textContent = "Inquiry drafted. Connect this form to your preferred form service when ready.";
-});
+const contactForm = document.querySelector(".contact-form");
+if (contactForm && formHelper) {
+  contactForm.addEventListener("submit", (event) => {
+    event.preventDefault();
+    formHelper.textContent = "Inquiry drafted. Connect this form to your preferred form service when ready.";
+  });
+}
