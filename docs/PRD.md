@@ -4,7 +4,7 @@
 **Version:** 1.0  
 **Priority:** HIGH  
 **Target Launch:** TBD  
-**Prepared for:** Google Stitch / Google AI Studio Build
+**Prepared for:** the design and implementation workflow Build
 
 ---
 
