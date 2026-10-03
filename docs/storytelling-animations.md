@@ -500,8 +500,8 @@ gsap.registerPlugin(ScrollTrigger, SplitText, CustomEase);
 
 ---
 
-## 9. Master Animation Prompt for Google AI Studio / Stitch
+## 9. Master Animation Prompt for the design and implementation workflow
 
-When implementing the animations, give Google Stitch this supplementary instruction:
+When implementing the animations, give the design workflow this supplementary instruction:
 
 > "This site uses a layered animation architecture: Spline for the hero 3D background scene (embedded WebGL canvas), Three.js for particle systems and the career path line visualization on the About page, GSAP ScrollTrigger for all scroll-based storytelling sequences, and Framer Motion for all React component-level micro-interactions and page transitions. Every section entrance is scroll-triggered. The hero sequence plays on page load. All animations must respect `prefers-reduced-motion`. The scroll progress bar (thin amber line, top of page) should always be present. The loader is DC initials + ring. See the full spec in `storytelling-animations.md`."
