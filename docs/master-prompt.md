@@ -1,6 +1,6 @@
 # Master Prompt
 ## Dumbiri Cletus — Personal Brand Website
-### For Google Stitch / Google AI Studio
+### For the design and implementation workflow
 
 ---
 
