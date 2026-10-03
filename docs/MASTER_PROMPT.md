@@ -1,4 +1,4 @@
-# MASTER PROMPT — Google Stitch / Google AI Studio
+# MASTER PROMPT — the design and implementation workflow
 ## Dumbiri Cletus Personal Brand Website
 **Version:** 1.0  
 **Purpose:** Single authoritative prompt for AI-assisted site generation
@@ -7,7 +7,7 @@
 
 ## HOW TO USE THIS PROMPT
 
-Paste this entire document into Google Stitch or Google AI Studio as the primary generation prompt. It is self-contained: it defines the person, the site, the aesthetic, the copy philosophy, the sections, the interactions, and the technical requirements. Do not abbreviate or summarize it — use it in full.
+Paste this entire document into the design workflow or the implementation workflow as the primary generation prompt. It is self-contained: it defines the person, the site, the aesthetic, the copy philosophy, the sections, the interactions, and the technical requirements. Do not abbreviate or summarize it — use it in full.
 
 If the AI requests clarification, refer to the companion documents:
 - `PRD.md` — Full product requirements
